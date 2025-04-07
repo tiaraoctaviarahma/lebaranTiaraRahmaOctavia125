@@ -1,0 +1,87 @@
+<am<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website dengan Sidebar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <aside class="sidebar">
+    <ul>
+    <li><a href="#" onclick="showContent('home')">Home</a></li>
+    <li><a href="#" onclick="showContent('about')">Tentang</a></li>
+    <li><a href="#" onclick="showContent('Moment Lebaran')">Moment Lebaran</a></li>
+    </ul>
+    </aside>
+    <main class="content">
+    <section id="home" class="content-section">
+    <h1>Selamat datang di halaman Utama.</h1>
+    <p>Disini,saya berbagi informasi,inspirasi,dan semangat lebaran untuk menemani hari-hari spesialmu.</p>
+    <p> Yuk,Silakan jelajahi menu untuk melihat halaman lainnya.</p>
+    <img src="img/tiara1.jpeg" alt='' style="width: 100%;max-width: 500px;border-radius: 10px;">
+    </section>
+    <section id="about" class="content-section" style="display:none;">
+    <h1>Selamat Datang di halaman spesial Lebaran!!.</h1>
+    <p>Website ini saya buat sebagai bentuk rasa syukur dan kebersamaan dimomen penuh berkah ini.</p>
+    <p>Lebaran Adalah waktu yang istimewa untuk saling memaafkan,mempererat tali silaturahmi dan berbagi kebahagiaan dengan keluarga,sahabat dan sesama.</p>
+    </section>
+    </section>
+    <section id="Moment Lebaran" class="content-section" style="display:none;">
+    <h1>Foto Lebaran</h1>
+    <div class="foto-grid">
+    <figure>
+    <img src="img/fotober3.jpeg" alt='foto lebaran 1'width="300">
+    <figcaption>Bersama saudara </figcaption>
+</figure>
+<figure>
+    <img src="img/ber2.jpeg" alt='foto lebaran 1' width="300">
+    <figcaption>Bersama sahabat</figcaption>
+</figure>
+<figure>
+    <img src="img/keluarga2.jpeg" alt='foto lebaran 1' width="300">
+    <figcaption> malam nya lanjut keluar makan bakso bersama Keluarga</figcaption>
+    </figure>
+<figure>
+    <img src="img/ber4.jpeg" alt='foto lebaran 2' width="300">
+    <figcaption> Pergi beraya ke rumah Teman</figcaption>
+</figure>
+<figure>
+    <img src="img/sunset.jpeg" alt='foto lebaran 3' width="300">
+    <figcaption> sore pergi lihat Sunset</figcaption>
+</figure>
+<figure>
+    <img src="img/tirtaalami.jpeg" alt='foto lebaran 4' width="300">
+    <figcaption>Mandi- Mandi Bareng Keluarga</figcaption>
+</figure>
+<figure>
+    <img src="img/spupu2.jpeg" alt='foto lebaran 5' width="300">
+    <figcaption>Bersama sepupu</figcaption>
+</figure>
+<figure>
+    <img src="img/spupu3.jpeg" alt='foto lebaran 5' width="300">
+    <figcaption>Bersama saudara dan sepupu</figcaption>
+</figure>
+<figure>
+    <img src="img/tiara2.jpeg" alt='foto lebaran 5' width="300">
+    <figcaption>diri sendiri</figcaption>
+</figure>
+<figure style="text-align: center;">
+    <img src="img/kuburan ayah.jpeg" alt='foto lebaran 1' width="300">
+    <figcaption>Sore hari lebaran pertama Pergi ziarah kekuburan ayah</figcaption>
+    </div>
+    </section>
+    </main>
+    </div>
+    <footer class="footer">
+    <p>Desain by Tiara Rahma Octavia</p>
+    </footer>
+    <script>
+    function showContent(sectionId) {
+    let sections = document.querySelectorAll('.content-section'); sections.forEach(section => section.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+</body>
+</html>
